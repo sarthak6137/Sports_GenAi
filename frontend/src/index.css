@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* This is the magic line for Tailwind v4 to recognize your button click */
+@variant dark (&:where(.dark, .dark *));
+
+@layer utilities {
+  /* This creates that premium glass effect from your prompt */
+  .glass-card {
+    @apply bg-white/80 dark:bg-slate-800/80 backdrop-blur-lg border border-gray-200 dark:border-gray-700 shadow-xl rounded-2xl;
+  }
+  
+  .glass-input {
+    @apply w-full bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-400 outline-none py-2 text-slate-800 dark:text-white transition-colors duration-300;
+  }
+}
+
+body {
+  /* This sets your background colors for Light and Dark mode */
+  @apply bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-white transition-colors duration-500 min-h-screen;
+}

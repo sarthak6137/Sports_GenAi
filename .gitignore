@@ -1,0 +1,17 @@
+# --- Backend ---
+backend/venv/
+backend/__pycache__/
+backend/*.py[cod]
+backend/.env
+backend/app/data/faiss_index/
+
+# --- Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# --- General ---
+.DS_Store
+.vscode/
+*.log
